@@ -1,0 +1,133 @@
+.mainWrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.leftsection {
+  width: 300px;
+  height: 100vh;
+  margin-top: 10px;
+  margin-left: 1px;
+  margin-right: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding: 3px 0 ;
+  
+  
+}
+
+
+
+.dropdown {
+  padding: 16px 15px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 1px solid #e5e5e5;
+  background-color: #e6e6e6;
+  color: #000000;
+  font-weight: 500;
+  width: 270px;
+  margin-bottom: 25px;
+  
+  
+}
+
+.percentage{
+    margin-right: 50px;
+    color:#727272;
+}
+
+.heading {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 30px;
+  margin-left: 14px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 0; 
+  position: relative;
+}
+
+.topicsList {
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 2px;
+  margin-left: 24px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.topicItem {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e5e5;
+  cursor: pointer;
+  
+}
+
+.topicItem:last-child {
+  border-bottom: none;
+}
+
+.firstTopic {
+  font-weight: 500;
+  color: #000000;
+}
+
+.otherTopics {
+  color: #727272;
+}
+
+.topicNumber {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.topicText {
+  font-size: 14px;
+  word-wrap: break-word;
+  max-width: 240px;
+  line-height: 1.5;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.rightsection {
+  flex: 1;
+
+  height: 50px;
+
+  margin-left: 100px;
+  border-radius: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.main {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,261 @@
+.tabs {
+  display: flex;
+  gap: 5px;
+  margin-top: 15px;
+  margin-bottom: 170px;
+  justify-content: center;
+  margin-left: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.tabs button {
+  padding: 14px 37px;
+  background-color: #e6e6e6;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+.tabs .active {
+  background-color: black;
+  color: #fff;
+}
+
+.tabs button:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-right: none;
+}
+
+.tabs button:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.tabs button:nth-child(1) {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.tabs button:nth-child(7) {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.question-content {
+  padding: 15px;
+  width: 970px;
+
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  border-bottom: 2px solid #ddd;
+
+  margin-left: 20px;
+}
+
+.question {
+  height: 30px;
+  width: 900px;
+  padding: 20px;
+  size: 20px;
+  line-height: 23.5px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  gap: 10px;
+  border-bottom: 2px solid #ddd;
+  margin-left: 30px;
+
+  size: 20px;
+}
+
+.question:last-child {
+  border-top-left-radius: 0;
+}
+
+.answer-section {
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-top: 2px solid #ddd;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  margin-top: 5px;
+  gap: 10px;
+  width: 900px;
+  margin-left: 30px;
+  max-height: 400px;
+  overflow-y: auto;
+  font-weight: 500;
+}
+
+.answer-section:first-child {
+  border-bottom: 0;
+}
+
+.answer-section:last-child {
+  border-top-right-radius: 0;
+}
+
+.question h2 {
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #000000;
+  border: 1px solid #f5f5f5;
+  padding: 5px 10px;
+}
+.answer-section p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin-top: 30px;
+  font-weight: 400;
+  size: 16px;
+}
+
+.summary {
+  height: 30px;
+  width: 900px;
+  padding: 20px;
+  size: 20px;
+  line-height: 23.5px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  gap: 30px;
+  border-bottom: 2px solid #ddd;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.summary h2 {
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: #000000;
+  border: 1px solid #f5f5f5;
+  padding: 5px 10px;
+}
+
+.summary-section {
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-top: 2px solid #ddd;
+  border-radius: 8px;
+  margin-top: 10px;
+  gap: 10px;
+  width: 900px;
+  margin-left: 30px;
+  height: 30vh;
+  position: relative;
+}
+.summary-section p {
+  font-size: 14px;
+  color: linear-gradient(90deg, #F9F9F9 0%, #F9F9F9  100%);
+  line-height: 3;
+  margin-top: 5px;
+  filter: blur(10px);
+  height: 100px;
+}
+
+.summary-section span {
+  margin-top: 130px;
+  margin-left: 10px;
+}
+
+.lock-overlay {
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 80px;
+}
+
+.imgtop {
+  object-fit: contain;
+  width: 40%;
+  height: 40%;
+  margin-top: 50px;
+
+  margin-bottom: 10px;
+}
+
+.lock-overlay img {
+  object-fit: contain;
+  width: 20%;
+  height: 50%;
+
+  margin-top: 5px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.lock-overlay .unlock {
+  margin-top: 0px 0 0 0;
+  margin-bottom: 110px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  margin-left: 10px;
+  width: 150px;
+}
+
+.new-content {
+  padding: 5px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  margin-top: -100px;
+  margin-left: 30px;
+}
+
+.new-content .heading {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 30px;
+  margin-left: 14px;
+  padding: 10px 0;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.new-content .heading .total {
+  margin-right: 20px;
+  font-weight: 500;
+}
+
+.new-content .heading .heading-img {
+  width: 63px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.dropdown-container {
+  margin-left: 735px;
+  margin-top: -80px;
+}
+
+.dropdown {
+  padding: 10px;
+  width: 200px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #bdbdbd;
+  background-color: #ffffff;
+}
+
+.new-content .heading .arrow{
+  color: #BDBDBD;
+}
